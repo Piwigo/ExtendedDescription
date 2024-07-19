@@ -11,5 +11,9 @@ $lang['Extended Description have been successfully installed. Now you can use al
 $lang['Hide elements'] = '隐藏元素';
 $lang['Redirect elements'] = '重定向元素';
 $lang['Login link & logged in block'] = '登录链接&登录状态';
-$lang['Back'] = '后退';
 $lang['Insert a carousel'] = '插入一个幻灯';
+$lang['Carrousel'] = '幻灯片';
+$lang['Descriptions'] = '描述';
+$lang['Login block'] = '登录模块';
+$lang['Multilingual'] = '多语言';
+$lang['Redirects'] = '重定向';
