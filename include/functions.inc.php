@@ -330,7 +330,7 @@ SELECT name, image_order
     }
     else if (empty($order_by))
     {
-      $order_by = str_replace('ORDER BY ', null, $conf['order_by_inside_category']);
+      $order_by = str_replace('ORDER BY ', '', $conf['order_by_inside_category']);
     }
 
     // get pictures ids
