@@ -1,0 +1,22 @@
+<h4>[login-link]</h4>
+<p>תג זה מאפשר להכניס קישור כניסה לכל מקום עם הפניית אוטומטית לעמוד הנוכחי.</p>
+
+<b>אפשרויות:</b>
+<ul>
+  <li><code>html</code> (אופציונלי) אם מוגדר כ <code>false</code> התג מחזיר רק את URL הכניסה, ללא HTML</li>
+  <li><code>text</code> (אופציונלי) תווית הקישור, יכול לכלול תגים של <code>[lang]</code></li>
+</ul>
+
+<pre>
+[login-link]
+
+[login-link html=true text="התחבר[lang=fr]connectez-vous[/lang]"]
+</pre>
+
+<h4>[logged]</h4>
+<p>הצגת בלוק טקסט רק אם המשתמש הנוכחי מחובר או לא.</p>
+
+<pre>
+[logged=true] ברוך הבא [/logged]
+[logged=false] אנא התחבר [/logged]
+</pre>

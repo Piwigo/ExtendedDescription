@@ -1,0 +1,36 @@
+<h4>[photo id=xx]</h4>
+<p>תגית זו מאפשרת לך להוסיף תמונה אחת בגודל שתרצה.</p>
+
+<b>אפשרויות:</b>
+<ul>
+  <li><code>id</code> מזהה התמונה</li>
+  <li><code>album</code> (אופציונלי) מזהה האלבום הראשי</li>
+  <li><code>size</code> (אופציונלי) גודל התמונה, מתוך <i>(SQ, TH, XXS, XS, S, M, L, XL, XXL)</i></li>
+  <li><code>html</code> (אופציונלי) אם מוגדר כ-<code>false</code> התג מחזיר רק את כתובת ה-URL של התמונה, בלי HTML</li>
+  <li><code>link</code> (אופציונלי) אם מוגדר כ-<code>true</code> התמונה מוקפת בקישור לדף התמונה</li>
+</ul>
+
+<pre>
+[photo id=46]
+
+[photo id=46 album=22 size=M html=true link=true]
+</pre>
+
+<h4>[random album=xx]</h4>
+<p>ישנן אותן אפשרויות כמו למעלה, פרט שהתמונה או התמונות נבחרות באקראי מתוך הגלריה כולה או מתוך <code>album</code>.</p>
+
+<p>להצגת מספר תמונות השתמש באופציה:</p>
+<ul>
+  <li><code>nb_images</code> (אופציונלי) מספר התמונות להציג</li>
+</ul>
+
+<pre>
+[random]
+
+[random album=123 size=M html=yes link=yes]
+
+[random album=123 size=M html=yes link=yes nb_images=8]
+</pre>
+
+<h4>[cat=xx]</h4>
+<p>תגית זו מכניסה אלבום בתיאור, כאשר <code>xx</code> הוא מזהה האלבום.</p>

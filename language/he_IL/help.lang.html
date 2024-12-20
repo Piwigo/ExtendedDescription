@@ -1,0 +1,37 @@
+<p>תיאורים רב-לשוניים ממוקמים בין התגים <code>[lang=xx]</code> ו-<code>[/lang]</code>, כאשר xx הוא קוד השפה (לדוגמה en, fr, es, ...).</p>
+
+<pre>
+[lang=en]Default description[/lang]
+[lang=fr]Description en français[/lang]
+[lang=de]Deutsche Beschreibung[/lang]
+[lang=il]תיאור ברירת מחדל[/lang]
+</pre>
+
+<h4>שפת ברירת מחדל <i>default</i></h4>
+<p>התיאור כברירת מחדל ישמש אם התיאור אינו זמין בשפה שנבחרה על ידי המשתמש המחובר.<br>
+אם <code>[lang=default]</code> לא קיים, כל דבר שמחוץ לתגים <code>[lang]</code> ייחשב כברירת מחדל.</p>
+
+<pre>
+[lang=default]Default description[/lang]
+[lang=fr]Description en français[/lang]
+[lang=il]תיאור ברירת מחדל[/lang>
+
+// או
+
+Default description
+[lang=fr]Description en français[/lang]
+[lang=il]תיאור ברירת מחדל[/lang]
+</pre>
+
+<h4>שפה מיוחדת <i>all</i></h4>
+<p>כל מה שבתוך <code>[lang=all]</code> ייכלל בתיאור, בלי קשר לשפה המוגדרת על ידי המשתמש המחובר.<br>
+זה בעיקר שימושי להוספת קוד HTML/JavaScript בתוך תיאור.</p>
+
+<pre>
+[lang=all]&lt;p&gt;[/lang]
+  [lang=default]Default description[/lang]
+  [lang=fr]Description en français[/lang]
+  [lang=de]Deutsche Beschreibung[/lang]
+  [lang=il]תיאור ברירת מחדל[/lang]
+[lang=all]&lt;/p&gt;[/lang]
+</pre>
