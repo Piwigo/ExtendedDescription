@@ -1,0 +1,33 @@
+<p>Mitmekeelsed kirjeldused paigutatakse siltide <code>[lang=xx]</code> ja <code>[/lang]</code> vahele, kus xx on keelekood (nt en, fr, es, ...).</p>
+
+<pre>
+[lang=en]Vaikekirjeldus[/lang]
+[lang=fr]Kirjeldus en français[/lang]
+[lang=de]Deutsche Beschreibung[/lang]
+</pre>
+
+<h4>Eriline keel <i>vaikimisi</i></h4>
+<p>The default description will be used if the description is not available in the connected user selected language.<br>
+If <code>[lang=default]</code> does not exists, anything outside the <code>[lang]</code> tags will be considered as the default description.</p>
+
+<pre>
+[lang=default]Default description[/lang]
+[lang=fr]Description en français[/lang]
+
+// OR
+
+Default description
+[lang=fr]Description en français[/lang]
+</pre>
+
+<h4>Special language <i>all</i></h4>
+<p>Anything inside <code>[lang=all]</code> will be included in the description, whatever the connected user defined language is.<br>
+This is mainly useful to include HTML/JavaScript code inside a description.</p>
+
+<pre>
+[lang=all]&lt;p&gt;[/lang]
+  [lang=default]Default description[/lang]
+  [lang=fr]Description en français[/lang]
+  [lang=de]Deutsche Beschreibung[/lang]
+[lang=all]&lt;/p&gt;[/lang]
+</pre>

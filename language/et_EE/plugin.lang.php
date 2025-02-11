@@ -22,4 +22,16 @@
 // +-----------------------------------------------------------------------+
 $lang['Use Extended Description tags...'] = 'Kasuta Laiendatud Kirjeldused tagi..';
 $lang['This category is redirected to %s'] = 'See album on ümber suunatud %s';
-?>
+$lang['Insert an album or a photo'] = 'Sisestage album või foto';
+$lang['Login block'] = 'Sisselogimise blokk';
+$lang['Login link & logged in block'] = 'Sisselogimislink ja sisselogimise blokk';
+$lang['Multilingual'] = 'Mitmekeelne';
+$lang['Multilingual descriptions'] = 'Mitmekeelsed kirjeldused';
+$lang['Redirect elements'] = 'Elementide ümbersuunamine';
+$lang['Redirects'] = 'Ümbersuunamised';
+$lang['Extended descriptions'] = 'Laiendatud kirjeldused';
+$lang['Hide elements'] = 'Peida elemendid';
+$lang['Insert a carousel'] = 'Sisestage karussell';
+$lang['Carrousel'] = 'Karussell';
+$lang['Descriptions'] = 'Kirjeldused';
+$lang['Extended Description have been successfully installed. Now you can use all its features in most text boxes of Piwigo.'] = 'Kirjelduse laiendus on edukalt installitud. Nüüd saate kasutada kõiki selle funktsioone enamikus Piwigo tekstikastides.';
