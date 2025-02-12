@@ -11,6 +11,7 @@ function parse_lang_tag($desc)
 
 function get_user_language_desc($desc, $user_lang=null)
 {
+  $desc = isset($desc) ? $desc : '';
   global $user;
 
   if (!is_string($user_lang))
