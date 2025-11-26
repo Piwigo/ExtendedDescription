@@ -275,6 +275,9 @@ function extdesc_get_slider($param)
 {
   global $template, $conf;
 
+  $template->smarty->registerPlugin('modifier', 'max', 'max');
+  $template->smarty->registerPlugin('modifier', 'min', 'min');
+
   $default_params = array(
     'album' =>     array('\d+', null),
     'nb_images' => array('\d+', 10),
