@@ -275,8 +275,15 @@ function extdesc_get_slider($param)
 {
   global $template, $conf;
 
-  $template->smarty->registerPlugin('modifier', 'max', 'max');
-  $template->smarty->registerPlugin('modifier', 'min', 'min');
+  if (!isset($template->smarty->registered_plugins['modifier']['max']))
+  {
+    $template->smarty->registerPlugin('modifier', 'max', 'max');
+  }
+
+  if (!isset($template->smarty->registered_plugins['modifier']['min']))
+  {
+    $template->smarty->registerPlugin('modifier', 'min', 'min');
+  }
 
   $default_params = array(
     'album' =>     array('\d+', null),
