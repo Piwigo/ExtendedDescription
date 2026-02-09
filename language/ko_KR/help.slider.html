@@ -1,0 +1,26 @@
+<h4>[slider album=xx]</h4>
+<p>이 태그는 사진 슬라이드쇼를 삽입할 수 있게 합니다.</p>
+
+<b>옵션:</b> (<code>album</code> 또는 <code>list</code> 중 하나를 설정해야 합니다)
+<ul>
+  <li><code>album</code>: (선택 사항) 원본 앨범</li>
+  <li><code>nb_images</code>: (선택 사항) 슬라이드쇼에 표시할 최대 사진 수</li>
+  <li><code>random</code>: (선택 사항) 앨범 내 사진 무작위 선택</li>
+  <li><code>list</code>: (선택 사항) 쉼표로 구분된 사진 ID 목록</li>
+  <li><code>size</code>: (선택 사항) 사진 크기, <i>(SQ, TH, XXS, XS, S, M, L, XL, XXL)</i> 중 선택</li>
+  <li><code>speed</code>: (선택 사항) 슬라이드쇼 속도 (초 단위)</li>
+  <li><code>title</code>: (선택 사항) 사진 제목 표시</li>
+  <li><code>effect</code>: (선택 사항) 전환 효과 (자세한 내용은 <a href="http://docs.dev7studios.com/jquery-plugins/nivo-slider#jumpNav-5">NivoSlider 문서</a> 참조)</li>
+  <li><code>arrows</code>: (선택 사항) 탐색 화살표 표시</li>
+  <li><code>elastic</code>: (선택 사항) 슬라이드쇼 크기를 각 사진에 맞게 조정</li>
+  <li><code>control</code>: (선택 사항) 탐색 컨트롤 표시, <code>thumb</code>로 설정 가능</li>
+  <li><code>thumbs_size</code>: (선택 사항) <code>control=thumb</code> 시 썸네일 크기(픽셀)</li>
+</ul>
+
+<pre>
+[slider album=123]
+
+[slider list=46,47,52]
+
+[slider album=123 nb_images=10 random=false size=M speed=3 title=false effect=fade arrows=true elastic=false control=true thumbs_size=80]
+</pre>

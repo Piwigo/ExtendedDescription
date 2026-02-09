@@ -1,0 +1,36 @@
+<h4>[photo id=xx]</h4>
+<p>이 태그를 사용하면 원하는 크기의 사진을 한 장 삽입할 수 있습니다.</p>
+
+<b>옵션:</b>
+<ul>
+  <li><code>id</code> 사진 식별자</li>
+  <li><code>album</code> (선택 사항) 상위 앨범 식별자</li>
+  <li><code>size</code> (선택 사항) 사진 크기 <i>(SQ, TH, XXS, XS, S, M, L, XL, XXL 중 선택)</i></li>
+  <li><code>html</code> (선택 사항) <code>false</code>로 설정 시 HTML 없이 사진 URL만 반환</li>
+  <li><code>link</code> (선택 사항) <code>true</code>로 설정 시 사진이 사진 페이지 링크로 감싸짐</li>
+</ul>
+
+<pre>
+[photo id=46]
+
+[photo id=46 album=22 size=M html=true link=true]
+</pre>
+
+<h4>[random album=xx]</h4>
+<p>위와 동일한 옵션이 제공되나, 사진은 전체 갤러리 또는 <code>album</code>에서 무작위로 선택됩니다.</p>
+
+<p>여러 장의 사진을 표시하려면 다음 옵션을 사용하십시오:</p>
+<ul>
+  <li><code>nb_images</code> (선택 사항) 표시할 이미지 수</li>
+</ul>
+
+<pre>
+[random]
+
+[random album=123 size=M html=yes link=yes]
+
+[random album=123 size=M html=yes link=yes nb_images=8]
+</pre>
+
+<h4>[cat=xx]</h4>
+<p>이 태그는 설명에 앨범을 삽입하며, 여기서 <code>xx</code>는 앨범 식별자입니다.</p>
